@@ -1,0 +1,31 @@
+{
+  "name": "films",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelf/jest-dynamodb": "^1.7.0",
+    "@types/aws-lambda": "^8.10.51",
+    "@types/jest": "^26.0.20",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^13.13.5",
+    "aws-sdk": "^2.655.0",
+    "jest": "^26.6.3",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.3",
+    "lodash": "^4.17.20"
+  }
+}

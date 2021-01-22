@@ -1,0 +1,23 @@
+service: people
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  profile: daniel-school
+  region: us-east-1
+  stackName: reto-indra-${opt:stage, self:provider.stage, 'dev'}
+  apiName: reto-indra-${opt:stage, self:provider.stage, 'dev'}
+
+functions:        
+  getPeople:
+    handler: handler.init
+    name: people-getPeople-${opt:stage, self:provider.stage, 'dev'}
+    timeout: 10
+    memorySize: 128
+
+    events:
+      - httpApi:
+          path: /people
+          method: get

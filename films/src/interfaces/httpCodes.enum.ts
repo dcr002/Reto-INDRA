@@ -1,0 +1,16 @@
+export const enum HTTP_CODES {
+    
+    OK = 200,
+    CREATED = 201,
+    ACEPTED = 202,
+    NOT_CONTENT = 204,
+
+    MODIFIED = 304,
+
+    BAD_REQUEST = 400,
+    UNAUTHORIZED = 401,
+    FORBIDEN = 403,
+    NOT_FOUND = 404,
+    UNPROCESSABLE_ENTITY = 422
+
+}
